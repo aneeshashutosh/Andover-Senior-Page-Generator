@@ -1,0 +1,19 @@
+.layout-item-hex {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/apps/Andover-Senior-Page-Generator/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: url("/apps/Andover-Senior-Page-Generator/img/hexagon-overlay.png");
+}
+
+.layout-item-hex-rot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/apps/Andover-Senior-Page-Generator/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: url("/apps/Andover-Senior-Page-Generator/img/hexagon-overlay-rot.png");
+}

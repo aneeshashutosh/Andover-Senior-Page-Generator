@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<base href="Andover-Senior-Page-Generator" target="_blank">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" href="/apps/Andover-Senior-Page-Generator/css/index.css">
+		<link rel="stylesheet" href="/apps/Andover-Senior-Page-Generator/css/collage.css">
+		<meta property="og:image" content="/apps/Andover-Senior-Page-Generator/img/shravya-core.png" />
+		<meta property="og:url" content="http://aneeshashutosh.com/apps/Andover-Senior-Page-Generator/" />
+		<meta property="og:description" content="An app to easily create beautiful senior pages. Developed by Aneesh Ashutosh and Julian Kalogerakis." />
+		<meta property="og:title" content="Andover Senior Page Generator" />
+		<link rel='shortcut icon' type='image/x-icon' href='/apps/Andover-Senior-Page-Generator/img/shravya-core.png' />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:900,600' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="/apps/Andover-Senior-Page-Generator/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/apps/Andover-Senior-Page-Generator/js/jquery.transform2d.js"></script>
+		<script type="text/javascript" src="/apps/Andover-Senior-Page-Generator/js/draggable_background.js"></script>
+		<script type="text/javascript" src="/apps/Andover-Senior-Page-Generator/js/html2canvas.js"></script>
+
+		<title>Senior Page Generator</title>
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<div id="controls">
+		<button id="download"></button>
+		<button id="shape"></button>
+		<button id="size"></button>
+		<button id="top2"><div id="top-selector"></div></button>
+		<button id="bottom"><div id="bottom-selector"></div></button>
+		<button id="center"><div id="center-selector"></div></button>
+		<button id="center-vert"><div id="center-vert-selector"></div></button>
+		<button id="help">?</button>
+	</div>
+
+	<div id="help-popup" class="popup">
+		<h1 class="download-popup-text">Tutorial<button id="help-close" class="close"></button></h1>
+		<p class="download-popup-text"><strong>Drag images into each cell</strong> to add them to your senior page.<br>You can <strong>drag images</strong> to <strong>change their position</strong> in the cell.<br><strong>Double click</strong> a cell to <strong>change the background to white</strong> to create a letterbox.<br>Double click it again to reset it to the default.<br><br>The top bar holds all tools you'll need to create the perfect senior page.<br>The first icon will <strong>save your image</strong> and <strong>download it</strong>; press it when you're done!<br>The next ones affect the layout of your page, <strong>changing the shape, size, and letterbox locations</strong>.<br>Like before, you can select multiple letterbox styles. Try out the settings for yourself!</p>
+	</div>
+
+	<div id="download-popup" class="popup">
+		<h1 class="download-popup-text">Your senior page is ready!<button id="popup-close" class="close"></button></h1>
+		<p class="download-popup-text"><strong>But before you download it: a note from Shravya Core co-founder <a href="http://facebook.com/aneesh.ashutosh">Aneesh Ashutosh</a>:</strong><br>What's up, '16? <a href="https://www.facebook.com/jkal8">Julian Kalogerakis</a> and I spent a solid amount of time writing this app. We'd appreciate if you could return the favor by <strong>dropping a like on the Facebook page for our team, Shravya Core. Just click the banner below and throw us a like.</strong> Shravya Core is a small venture right now and we need all the exposure we can get.<br>Either way, click the blue download button below to grab your senior page.</p>
+		<a href="https://www.facebook.com/shravyacore" target="_blank"><div id="shravya-core-background"><img src="img/shravya-core.png"></div></a>
+		<p class="download-popup-text">If you want to go the extra mile, invite some friends to like the page too or tag Shravya Core in your senior page.</p>
+		<div style="text-align: center;"><button id="download-2"></button></div>
+	</div>
+	<body>
+		<div id="layout-selector">
+			<p class="layout-preview-text">Recommended for you:</p>
+			<ul id="layout-preview-container">
+			</ul>
+		</div>
+		<div id="editor-container">
+			
+		</div>
+		<script type="text/javascript" src="js/collage.js"></script>
+	</body>
+</html>
